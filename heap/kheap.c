@@ -114,9 +114,6 @@ heap_t *create_heap(u32 start, u32 end_addr, u32 max,
 	return heap;
 }
 
-/*
- * Creating a heap without page alignment is easy!
- */
 static u32 expand(u32 new_size, heap_t *heap)
 {
 	/* If new_size is < than current size. Return -1 */
