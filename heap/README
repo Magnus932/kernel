@@ -1,4 +1,6 @@
 Heap design is written based on James's design, which again
-is based on the GNU C heap
+is based on the GNU C heap.
 
-The code could probably be divided into more pieces.
+The code could probably be divided into more pieces which
+takes care of it own part of the functionality. It is a bit
+messy and unreadable as it is.
