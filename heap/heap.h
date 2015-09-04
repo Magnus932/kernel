@@ -5,16 +5,6 @@
 #include "types.h"
 #include "ordered_array.h"
 
-/*
- * My test defines for setting up a non-paged
- * aligned heap. Starts at 10MB exactly,
- * and is of size 1MB. It can thus be expanded
- * up to 4MB. Index size consists of the first
- * 128KB of the entire space. For now the heap can
- * not be contracted, only expanded. Also in my example
- * the heap_t structure will be allocated staticly on
- * compiling. It will be a bit above 1MB.
- */
 #define KHEAP_START 			0x00a00000
 #define KHEAP_INITIAL_SIZE 		0x00100000
 #define KHEAP_MAXSIZE			0x00400000
